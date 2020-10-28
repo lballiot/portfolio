@@ -1,0 +1,99 @@
+:root {
+	--red-color: #bb0a21;
+	--blue-color: #2699cf;
+	--dark-color: rgb(37, 38, 39);
+	--grey-color: #eaebeb;
+	--light-color: #f4f5f5;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 62.5%;
+	line-height: 1.6rem;
+}
+img {
+	max-width: 100%;
+}
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 1.6rem;
+	color: var(--dark-color);
+	background-color: var(--light-color);
+}
+
+h1 {
+	font-size: 4.8rem;
+}
+
+h2 {
+	font-size: 2.3rem;
+	text-transform: uppercase;
+	color: rgba(37, 38, 39, 0.2);
+}
+
+h3 {
+	font-size: 2.1rem;
+	color: var(--red-color);
+}
+/* --------------- CLASSES GÉNÉRIQUES --------------- */
+
+.separator {
+	height: 1px;
+	width: 50%;
+	background-color: var(--blue-color);
+	margin: 1rem;
+}
+
+/* --------------- HEADER --------------- */
+
+.profile-header {
+	display: flex;
+	flex: 1;
+	background-color: var(--dark-color);
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	color: var(--light-color);
+}
+.profile-bloc {
+	background-color: #3b3d3f;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 3rem;
+}
+/* .profile-bloc::before {
+	content: "";
+	background-color: var(--red-color);
+	transform: rotate(20deg);
+	width: 100%;
+	height: 100%;
+} */
+.profile-bloc-rotate {
+	content: " ";
+	background-color: var(--red-color);
+	transform: rotate(20deg);
+}
+.profile-bloc img {
+	border-radius: 50%;
+	width: 25vw;
+	height: auto;
+	align-items: center;
+}
+.profile-bloc p {
+	padding: 1rem;
+}
+.profile-bloc > .separator {
+	background-color: var(--red-color);
+}
+
+/* --------------- PRÉSENTATION --------------- */
