@@ -35,17 +35,18 @@ h1 {
 }
 
 h2 {
-	font-size: 2.3rem;
+	font-size: 5.6rem;
 	text-transform: uppercase;
 	color: rgba(37, 38, 39, 0.2);
 }
 
 h3 {
-	font-size: 2.1rem;
+	font-size: 5rem;
 	color: var(--red-color);
 }
 p {
-	font-size: 1.9rem;
+	font-size: 2rem;
+	line-height: 3.5rem;
 }
 /* --------------- CLASSES GÉNÉRIQUES --------------- */
 
@@ -56,11 +57,51 @@ p {
 	margin: 1rem;
 }
 
+strong {
+	color: var(--red-color);
+	font-size: 2.5rem;
+	font-weight: normal;
+}
+
+button {
+	color: var(--blue-color);
+	border: 1px solid var(--blue-color);
+	background-color: var(--light-color);
+	border-radius: 8px;
+	padding: 1rem;
+	margin-right: auto;
+}
+
+button:hover {
+	background-color: var(--blue-color);
+	opacity: 0.6;
+	color: var(--light-color);
+}
+
+/* --------------- SUPERIMPOSED TITLE --------------- */
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5rem 0 7rem 0;
+}
+.title > h2,
+.title > h3 {
+	font-weight: 300;
+}
+
+.title > h3 {
+	position: absolute;
+	padding: 2rem;
+}
+
 /* --------------- HEADER --------------- */
 
 .profile-header {
 	display: flex;
 	flex: 1;
+	flex-direction: row;
 	background-color: var(--dark-color);
 	min-height: 100vh;
 	justify-content: center;
@@ -82,11 +123,11 @@ p {
 	width: 100%;
 	height: 100%;
 } */
-.profile-bloc-rotate {
+/* .profile-bloc-rotate {
 	content: " ";
 	background-color: var(--red-color);
 	transform: rotate(20deg);
-}
+} */
 .profile-bloc img {
 	border-radius: 50%;
 	width: 25vw;
@@ -103,3 +144,13 @@ p {
 }
 
 /* --------------- PRÉSENTATION --------------- */
+.profile-presentation {
+	display: flex;
+	flex-direction: column;
+	margin: 5rem;
+}
+
+.profile-presentation-stage {
+	margin: 5rem 0;
+	font-weight: bold;
+}

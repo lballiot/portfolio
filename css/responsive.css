@@ -7,18 +7,26 @@
 	}
 
 	h2 {
-		font-size: 2.3rem;
+		font-size: 4rem;
 		text-transform: uppercase;
 		color: rgba(37, 38, 39, 0.2);
 	}
 
 	h3 {
-		font-size: 2.1rem;
+		font-size: 4rem;
 		color: var(--red-color);
+	}
+	p {
+		font-size: 1.6rem;
+		line-height: 2.5rem;
 	}
 
 	.container {
 		flex-direction: column;
+	}
+
+	strong {
+		font-size: 2.3rem;
 	}
 
 	/* --------------- HEADER PROFILE --------------- */
@@ -38,6 +46,10 @@
 	}
 	.profile-bloc > .separator {
 		margin: 0.5rem;
+	}
+
+	.profile-presentation {
+		margin: 3rem;
 	}
 
 	/* --------------- MENU --------------- */
@@ -84,4 +96,20 @@
 	.nav-toggle-bar::after {
 		top: 10px;
 	} */
+}
+
+@media screen and (min-width: 901px) {
+	/* --------------- HEADER PROFILE --------------- */
+	.header-page {
+		display: flex;
+	}
+	.header-page header,
+	.header-page .profile-presentation {
+		flex: 1;
+	}
+	.profile-presentation {
+		align-items: center;
+		justify-content: center;
+		margin: 5rem 7rem;
+	}
 }
