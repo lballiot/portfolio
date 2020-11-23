@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-	font-size: 4.8rem;
+	font-size: 4rem;
 	font-weight: 300;
 }
 
@@ -45,7 +45,7 @@ h3 {
 	color: var(--red-color);
 }
 p {
-	font-size: 2rem;
+	font-size: 1.9rem;
 	line-height: 3.5rem;
 }
 /* --------------- CLASSES GÉNÉRIQUES --------------- */
@@ -78,6 +78,25 @@ button:hover {
 	color: var(--light-color);
 }
 
+/* --------------- ANIMATION --------------- */
+
+@keyframes rotation {
+	from {
+		transform: rotate(30deg);
+	}
+	to {
+		transform: rotate(210deg);
+	}
+}
+@keyframes rotation2 {
+	from {
+		transform: rotate(60deg);
+	}
+	to {
+		transform: rotate(240deg);
+	}
+}
+
 /* --------------- SUPERIMPOSED TITLE --------------- */
 
 .title {
@@ -98,39 +117,50 @@ button:hover {
 
 /* --------------- HEADER --------------- */
 
-.profile-header {
+header {
 	display: flex;
+	position: relative;
 	flex: 1;
 	flex-direction: row;
 	background-color: var(--dark-color);
 	min-height: 100vh;
+	min-width: 50vw;
 	justify-content: center;
 	align-items: center;
 	color: var(--light-color);
 }
+/* Bloc with square rotation */
 .profile-bloc {
 	background-color: #3b3d3f;
+	position: absolute;
 	align-items: center;
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
-	padding: 2rem 6rem;
+	width: 400px;
+	height: 400px;
 }
-/* .profile-bloc::before {
-	content: "";
+
+.bloc-rotation1,
+.bloc-rotation2 {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+}
+.bloc-rotation1 {
+	transform: rotate(30deg);
 	background-color: var(--red-color);
-	transform: rotate(20deg);
-	width: 100%;
-	height: 100%;
-} */
-/* .profile-bloc-rotate {
-	content: " ";
-	background-color: var(--red-color);
-	transform: rotate(20deg);
-} */
+	animation: rotation 3s linear;
+}
+.bloc-rotation2 {
+	transform: rotate(60deg);
+	background-color: var(--blue-color);
+	animation: rotation2 3s linear;
+}
+
 .profile-bloc img {
 	border-radius: 50%;
-	width: 25vw;
+	width: 40%;
 	height: auto;
 	align-items: center;
 	margin: 1rem;
@@ -146,8 +176,10 @@ button:hover {
 /* --------------- PRÉSENTATION --------------- */
 .profile-presentation {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
-	margin: 5rem;
+	margin: 5rem 7rem;
 }
 
 .profile-presentation-stage {

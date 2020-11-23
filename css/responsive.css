@@ -1,17 +1,15 @@
 /* Pour les écrans inférieurs ou égal à 600px  */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 	h1 {
 		font-size: 3rem;
 		margin: 0.5rem auto 1.3rem;
 	}
-
 	h2 {
 		font-size: 4rem;
 		text-transform: uppercase;
 		color: rgba(37, 38, 39, 0.2);
 	}
-
 	h3 {
 		font-size: 4rem;
 		color: var(--red-color);
@@ -20,25 +18,17 @@
 		font-size: 1.6rem;
 		line-height: 2.5rem;
 	}
-
 	.container {
 		flex-direction: column;
 	}
-
 	strong {
 		font-size: 2.3rem;
 	}
 
 	/* --------------- HEADER PROFILE --------------- */
 
-	.profile-header {
+	header {
 		min-height: 50vh;
-	}
-	.profile-header img {
-		width: 125px;
-	}
-	.profile-bloc {
-		padding: 0.5rem 2rem;
 	}
 	.profile-bloc p {
 		font-size: 1.6rem;
@@ -103,13 +93,30 @@
 	.header-page {
 		display: flex;
 	}
-	.header-page header,
-	.header-page .profile-presentation {
-		flex: 1;
+}
+
+/* Adaptation square présentation responsive */
+
+@media screen and (max-width: 600px) {
+	.profile-bloc {
+		width: 250px;
+		height: 250px;
 	}
-	.profile-presentation {
-		align-items: center;
-		justify-content: center;
-		margin: 5rem 7rem;
+	.bloc-rotation1,
+	.bloc-rotation2 {
+		width: 250px;
+		height: 250px;
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+	.profile-bloc {
+		width: 300px;
+		height: 300px;
+	}
+	.bloc-rotation1,
+	.bloc-rotation2 {
+		width: 300px;
+		height: 300px;
 	}
 }
