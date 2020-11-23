@@ -48,6 +48,15 @@ p {
 	font-size: 1.9rem;
 	line-height: 3.5rem;
 }
+
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: var(--dark-color);
+}
+
 /* --------------- CLASSES GÉNÉRIQUES --------------- */
 
 .separator {
@@ -113,6 +122,23 @@ button:hover {
 .title > h3 {
 	position: absolute;
 	padding: 2rem;
+}
+
+/* --------------- MENU --------------- */
+
+.nav-list {
+	display: flex;
+	flex-flow: row nowrap;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 3rem;
+}
+.nav-list li {
+	margin: 2rem;
+}
+.nav-list li a {
+	font-size: 2rem;
 }
 
 /* --------------- HEADER --------------- */
