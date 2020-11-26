@@ -77,7 +77,7 @@ button {
 	border: 1px solid var(--blue-color);
 	background-color: var(--light-color);
 	border-radius: 8px;
-	padding: 1rem;
+	padding: 0.7rem;
 	margin-right: auto;
 }
 
@@ -126,19 +126,28 @@ button:hover {
 
 /* --------------- MENU --------------- */
 
-.nav-list {
+.menu ul {
 	display: flex;
 	flex-flow: row nowrap;
 	position: absolute;
 	top: 0;
 	right: 0;
-	margin: 3rem;
+	margin: 2rem 3rem;
 }
-.nav-list li {
+.menu ul li {
 	margin: 2rem;
 }
-.nav-list li a {
+.menu ul li a {
 	font-size: 2rem;
+}
+
+/* Bug IOS
+/* => L'overflow doit être appliqué sur l'élément body ET html
+/* pour faire disparaître le scroll sur safari IOS
+*/
+.noscroll,
+.noscroll body {
+	overflow: hidden;
 }
 
 /* --------------- HEADER --------------- */
