@@ -27,6 +27,7 @@ body {
 	font-size: 1.6rem;
 	color: var(--dark-color);
 	background-color: var(--light-color);
+	overflow-y: none;
 }
 
 h1 {
@@ -43,6 +44,9 @@ h2 {
 h3 {
 	font-size: 5rem;
 	color: var(--red-color);
+}
+h4 {
+	font-size: 2.5rem;
 }
 p {
 	font-size: 1.9rem;
@@ -66,6 +70,18 @@ a {
 	margin: 1rem;
 }
 
+.filter {
+	filter: blur(5px);
+}
+
+.visible {
+	opacity: 1;
+}
+
+.hidden {
+	opacity: 0;
+}
+
 strong {
 	color: var(--red-color);
 	font-size: 2.5rem;
@@ -78,13 +94,13 @@ button {
 	background-color: var(--light-color);
 	border-radius: 8px;
 	padding: 0.7rem;
-	margin-right: auto;
 }
 
 button:hover {
 	background-color: var(--blue-color);
 	opacity: 0.6;
 	color: var(--light-color);
+	transition: all 0.3s linear;
 }
 
 /* --------------- ANIMATION --------------- */
@@ -185,11 +201,19 @@ header {
 .bloc-rotation1 {
 	transform: rotate(30deg);
 	background-color: var(--red-color);
-	animation: rotation 3s linear;
+	/* animation: rotation 3s linear; */
 }
 .bloc-rotation2 {
 	transform: rotate(60deg);
 	background-color: var(--blue-color);
+	/* animation: rotation2 3s linear; */
+}
+
+/* Classe animation for js */
+.rotation1 {
+	animation: rotation 3s linear;
+}
+.rotation2 {
 	animation: rotation2 3s linear;
 }
 
@@ -209,7 +233,7 @@ header {
 }
 
 /* --------------- PRÉSENTATION --------------- */
-.profile-presentation {
+#profile-presentation {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -220,4 +244,140 @@ header {
 .profile-presentation-stage {
 	margin: 5rem 0;
 	font-weight: bold;
+}
+
+/* --------------- CARROUSEL RÉALISATIONS --------------- */
+#realisations {
+	padding: 5rem;
+	background-color: var(--grey-color);
+}
+.realisations-projet,
+.competence-list {
+	display: flex;
+	justify-content: space-between;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	margin: 10rem 2rem;
+}
+
+.realisations-projet li,
+.competence-list li {
+	flex: 1 0 30%;
+	scroll-snap-align: start;
+}
+
+#realisations article {
+	background-color: var(--light-color);
+	border-radius: 8px;
+	min-height: 24rem;
+	padding: 2rem;
+	margin: 1.5rem;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+#realisations article img {
+	width: 100%;
+	height: auto;
+}
+
+#realisations article h4,
+#realisations article p {
+	position: absolute;
+}
+.placement-title {
+	top: 50px;
+	text-align: right;
+}
+.placement-p {
+	top: 100px;
+	padding: 1.5rem;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+
+/* ::-webkit-scrollbar-track {
+	background-color: var(--light-color);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+	border-radius: 4px;
+	height: 6px;
+	background-color: var(--light-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--dark-color);
+	border-radius: 4px;
+} */
+
+/* --------------- CARROUSEL COMPÉTENCES --------------- */
+
+#competences {
+	padding: 5rem;
+}
+.competence-list li {
+	background-color: var(--grey-color);
+	border-radius: 8px;
+	padding: 5rem 2rem;
+	margin: 1.5rem;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.competence-list li h4 {
+	color: var(--blue-color);
+	font-weight: 300;
+}
+
+.competence-icon {
+	margin: 4rem 0;
+}
+
+/* --------------- CONTACT --------------- */
+
+#contact {
+	padding: 5rem;
+	background-color: var(--grey-color);
+}
+
+.contact-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10rem 2rem;
+}
+
+.contact-icon svg {
+	margin: 4rem;
+}
+
+/* --------------- FOOTER --------------- */
+
+footer {
+	background-color: var(--dark-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+
+footer p {
+	color: var(--light-color);
+}
+
+.copyright {
+	padding-left: 5px;
+}
+
+.pdg {
+	padding-top: 3px;
 }

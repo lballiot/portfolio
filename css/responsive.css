@@ -6,7 +6,7 @@
 	--light-color: #f4f5f5;
 }
 
-/* Pour les écrans inférieurs ou égal à 600px  */
+/* Pour les écrans inférieurs ou égal à 900px  */
 
 @media screen and (max-width: 900px) {
 	h1 {
@@ -46,7 +46,7 @@
 		margin: 0.5rem;
 	}
 
-	.profile-presentation {
+	#profile-presentation {
 		margin: 3rem;
 	}
 
@@ -154,6 +154,38 @@
 		top: 0;
 		transform: rotate(90deg);
 	}
+
+	/* --------------- CARROUSEL --------------- */
+
+	#realisations,
+	#competences {
+		padding: 5rem 2rem;
+	}
+	#realisations article {
+		min-height: 16rem;
+	}
+
+	.realisations-projet li,
+	.competence-list li {
+		flex: 1 0 90%;
+	}
+
+	.competence-list li {
+		padding: 2rem 1rem;
+	}
+	.competence-icon {
+		margin: 2rem 0;
+	}
+
+	.realisations-projet,
+	.competence-list,
+	.contact-icon {
+		margin: 5rem 2rem;
+	}
+
+	.contact-icon svg {
+		margin: 2rem;
+	}
 }
 
 /*
@@ -185,7 +217,32 @@
 	.header-page {
 		display: flex;
 	}
+	#profile-presentation > a {
+		margin-right: auto;
+	}
 }
+
+/*
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ * 
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+*/
 
 /* Adaptation square présentation responsive */
 
@@ -201,7 +258,7 @@
 	}
 }
 
-@media screen and (min-width: 601px) and (max-width: 1100px) {
+@media screen and (min-width: 601px) and (max-width: 900px) {
 	.profile-bloc {
 		width: 300px;
 		height: 300px;
@@ -210,5 +267,16 @@
 	.bloc-rotation2 {
 		width: 300px;
 		height: 300px;
+	}
+}
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+	.profile-bloc {
+		width: 320px;
+		height: 320px;
+	}
+	.bloc-rotation1,
+	.bloc-rotation2 {
+		width: 320px;
+		height: 320px;
 	}
 }

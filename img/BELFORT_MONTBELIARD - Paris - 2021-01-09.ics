@@ -1,0 +1,63 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:vsa-calendar
+BEGIN:VEVENT
+DTSTART:20210109T122600
+DTEND:20210109T150800
+SUMMARY:BELFORT/MONTBELIARD - Paris
+LOCATION:BELFORT-MONTBELIARD TGV
+DESCRIPTION:Votre voyage\n1 passager 0 animal\n\n    BELFORT-MONTBELIARD T
+ GV -> Gare de Lyon (Paris)\n    Départ le samedi 9 janv. à 12:26\n    Arri
+ vée à 15:08\n    TGV INOUI 6704\n    Voiture 8 - Place 64\n\n\nRéférences 
+ : UHSZFB - BALLIOT\nAccéder à mon voyage :\nhttps://www.oui.sncf/services-
+ train/suivi-commande?pnrRef=UHSZFB&ownerName=BALLIOT&vsa_&rfrr=Agenda_Acce
+ sCommande
+URL:https://www.oui.sncf/services-train/suivi-commande?pnrRef=UHSZFB&owner
+ Name=BALLIOT&vsa_&rfrr=Agenda_AccesCommande
+TRANSP:TRANSPARENT
+UID:UHSZFB20210109T122600
+DTSTAMP:20201207T084238
+BEGIN:VALARM
+TRIGGER:-PT4H
+REPEAT:1
+DURATION:PT3H
+ACTION:DISPLAY
+DESCRIPTION:BELFORT/MONTBELIARD - Paris
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:BELFORT/MONTBELIARD - Paris
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210109T175600
+DTEND:20210109T203500
+SUMMARY:Paris - BELFORT/MONTBELIARD
+LOCATION:Gare de Lyon (Paris)
+DESCRIPTION:Votre voyage\n1 passager 0 animal\n\n    Gare de Lyon (Paris) 
+ -> DIJON VILLE\n    Départ le samedi 9 janv. à 17:56\n    Arrivée à 19:31\
+ n    LYRIA 9277\n    Voiture 18 - Place 81\n\n    DIJON VILLE -> BELFORT-M
+ ONTBELIARD TGV\n    Départ le samedi 9 janv. à 19:46\n    Arrivée à 20:35\
+ n    TGV INOUI 9896\n    Voiture 8 - Place 87\n\n\nRéférences : UHSZFB - B
+ ALLIOT\nAccéder à mon voyage :\nhttps://www.oui.sncf/services-train/suivi-
+ commande?pnrRef=UHSZFB&ownerName=BALLIOT&vsa_&rfrr=Agenda_AccesCommande
+URL:https://www.oui.sncf/services-train/suivi-commande?pnrRef=UHSZFB&owner
+ Name=BALLIOT&vsa_&rfrr=Agenda_AccesCommande
+TRANSP:TRANSPARENT
+UID:UHSZFB20210109T175600
+DTSTAMP:20201207T084238
+BEGIN:VALARM
+TRIGGER:-PT4H
+REPEAT:1
+DURATION:PT3H
+ACTION:DISPLAY
+DESCRIPTION:Paris - BELFORT/MONTBELIARD
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Paris - BELFORT/MONTBELIARD
+END:VALARM
+END:VEVENT
+END:VCALENDAR
